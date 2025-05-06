@@ -1,19 +1,19 @@
 package universidad.model;
 
 public class Propiedad {
-    private Long id;
     private String nombre;
     private TipoPropiedad tipo;
     private int huespedes;
 
-    public Propiedad(String nombre, String tipo, int huespedes) {
+    public Propiedad(String nombre, String tipoStr, int huespedes) {
         this.nombre = nombre;
-        this.tipo = TipoPropiedad.valueOf(tipo);
+        this.tipo = TipoPropiedad.fromString(tipoStr);
         this.huespedes = huespedes;
     }
 
     @Override
     public String toString() {
-        return "Propiedad: " + nombre + " - Tipo: " + tipo + " - Huéspedes: " + huespedes;
+        return String.format("Propiedad: %s - Tipo: %s - Huéspedes: %d", 
+            nombre, tipo, huespedes);
     }
 }

@@ -1,4 +1,4 @@
-package universidad.repository;
+package universidad.access_data;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

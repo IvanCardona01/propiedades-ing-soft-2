@@ -3,6 +3,8 @@ package universidad.repository;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import universidad.access_data.DatabaseConnection;
 import universidad.model.Propiedad;
 
 public class PropiedadRepository {
